@@ -29,10 +29,17 @@ namespace CollectionsMasterConsoleUI
             
             NumberPrinter(numbers);
             Console.WriteLine("-------------------");
+            
+            Array.Reverse(numbers);
+            NumberPrinter(numbers);
+            ReverseArray(numbers);
+            NumberPrinter(numbers);
+            
 
            
 
             Console.WriteLine("All Numbers Reversed:");
+            Console.WriteLine("sorted numbers");
 
             Console.WriteLine("---------REVERSE CUSTOM------------");
 
@@ -179,9 +186,6 @@ namespace CollectionsMasterConsoleUI
         }
 
         private static void ReverseArray(int[] array)
-        
-        
-
         {
             int start = 0;
             int end = array.Length - 1;
